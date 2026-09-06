@@ -1,1 +1,5 @@
+Create variable > Names(variable Name) > array of [T] > string > {"orange","Apple","Banana","Mamgo","pineApple"}
 
+Add Assign Activity > To > Names(variable Name) > setvalues > Names.orderBy(Function(x) x).ToArray()
+
+Add Message Box > String.Join(",",Names)
