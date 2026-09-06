@@ -1,1 +1,44 @@
+1. ToLower Method
 
+Create two variables.
+Result → String
+Text → String   --- "UIPATH'
+
+Add Invoke Method activity.
+Target Type → (null)
+Target Object → { } Text
+Method Name → ToLower
+
+Add Message Box.
+Text → { } Result
+
+In Properties, set Method Name as ToLower, Result as Result, and Target Object as Text.
+
+The output will display the text in lowercase.
+
+2.Replace Method
+
+Create two variables.
+
+Result → String
+Text → String   --- "I Like JAVA lab"
+
+Add Invoke Method activity.
+
+Target Type → (null)
+Target Object → { } Text
+Method Name → Replace
+
+Add Message Box.
+
+Text → { } Result
+
+In Properties, add the parameters "JAVA" and "RPA".
+
+Set Result → Result.
+
+Set Target Object → Text.
+
+
+
+The output will display the replaced text.
