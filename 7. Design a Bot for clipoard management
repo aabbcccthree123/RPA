@@ -1,1 +1,10 @@
+Create two variables 1) clipBoardText
+                     2) inputText
 
+Add Assign Activity > (To) inputText > (Set) "Copy Text to Clipboard Text and Display it"
+
+Set Clipboard > inputText
+
+Get Clipboard > go to properties > input/output > result > clipboardText
+
+Message Box > clipboardText
