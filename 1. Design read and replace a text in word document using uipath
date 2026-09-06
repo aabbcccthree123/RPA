@@ -2,7 +2,9 @@ open Word > Create new file > Dear {{Name}}, Welcome to Second M.Sc Computer Sci
 
 Open Uipath > Open word Application Scope > File path > choose path of Word
 
-Do > Search > '{{Name}}' > Replace "your NAme"
+Do > replace text
+
+Search > '{{Name}}' > Replace "your NAme"
 
 replace all on Mode
 
