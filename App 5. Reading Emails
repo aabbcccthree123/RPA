@@ -1,1 +1,11 @@
+Add > Get Newest Email activity > then Click add new connection > then scroll down click Connect
 
+Then choose Email > Then check Box click Select all > then continue > then a Message will be displayed
+
+open uipath > create variable > emails > gmailmessage(search)
+
+in get message email Activity > go to properties > output > emails(variable name)
+
+Add Message Box > "From: " + emails.From.Address + Environment.NewLine + "Subject: " + emails.Subject + Environment.NewLine + "Body: " + emails.Body
+
+Run the program
