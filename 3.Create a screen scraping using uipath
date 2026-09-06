@@ -1,1 +1,11 @@
+open microsoft edge > search "what is RPA"
 
+open uipath > add use application browser activity > indicate the microsoft edge screen
+
+Create variable > variable1
+
+inside do > add Get text activity > indicate select text in microsoft edge
+
+go to get text properties > input/output > text value > variable1(variable name)
+
+add message box > variable1(variable name) > ok
