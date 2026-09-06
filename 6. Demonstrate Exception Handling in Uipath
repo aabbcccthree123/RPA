@@ -1,1 +1,39 @@
+Create variable
+    Result → Int32
+    Num → Int32
+    UserInput → String
 
+Add Try Catch activity.
+Inside Try
+
+→ Add Input Dialog activity.
+    Dialog title → "Enter Number"
+    Input label → "Enter number"
+    Input type → Text Box
+    Value entered → UserInput
+
+→ Add Assign activity.
+    To variable → Num
+    Set value → Convert.ToInt32(UserInput)
+
+→ Add Assign activity.
+    To variable → Result
+    Set value → 500 / Num
+
+→ Add Message Box.
+    Text → "Result = " + Result.ToString
+
+Catch Format Exception
+
+→ Add Message Box.
+    Text → "Invalid input. Please enter number only"
+
+Catch Divide By Zero Exception
+
+→ Add Message Box.
+    Text → Exception.Message
+
+Finally
+
+→ Add Message Box.
+    Text → "Process Completed"
