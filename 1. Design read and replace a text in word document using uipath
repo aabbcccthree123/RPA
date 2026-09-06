@@ -1,0 +1,17 @@
+open Word > Create new file > Dear {{Name}}, Welcome to Second M.Sc Computer Science
+
+Open Uipath > Open word Application Scope > File path > choose path of Word
+
+Do > Search > '{{Name}}' > Replace "your NAme"
+
+replace all on Mode
+
+Download one image
+
+uipath After word application > Add picture Activity
+
+picture to insert > Choose path downloaded image
+
+insert Relative to > Document
+
+position > End
