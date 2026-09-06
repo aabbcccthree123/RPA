@@ -6,11 +6,11 @@ Do > replace text
 
 Search > '{{Name}}' > Replace "your NAme"
 
-replace all on Mode
+replace all - on Mode
 
 Download one image
 
-uipath After word application > Add picture Activity
+under replace text > Add picture Activity
 
 picture to insert > Choose path downloaded image
 
