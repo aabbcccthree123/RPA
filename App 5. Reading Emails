@@ -2,7 +2,7 @@ Add > Get Newest Email activity > then Click add new connection > then scroll do
 
 Then choose Email > Then check Box click Select all > then continue > then a Message will be displayed
 
-open uipath > create variable > emails > gmailmessage(search)
+open uipath > create variable > emails > gmailmessage(search browse from types)
 
 in get message email Activity > go to properties > output > emails(variable name)
 
