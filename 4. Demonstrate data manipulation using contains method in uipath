@@ -1,1 +1,8 @@
+Create two variables 1) strText > string
+                    2) result > boolean
 
+Add Assign Activity > To > strText , value > "Uipath studio is a Powerfull software"
+
+Add Assign Activity > to > result , strText.Contains("Powerfull")
+
+Message Box > Text > result.Tostring
