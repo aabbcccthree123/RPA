@@ -1,1 +1,10 @@
-
+Create variable - userText
+Drag use application browser indicate blank notepad page 
+Inside do drag input dialog activity 
+Dialog title - "Enter text"
+Input label - "enter your text '
+Input type - textbox
+Value entered - userText
+Drag Type into activity - indicate blank page in notepad 
+Type this- userText 
+Run the program
