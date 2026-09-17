@@ -1,1 +1,66 @@
+create variable
+name                data type
+customerEmail       string
+total		    double
+quantity	    Int32
+price	            double
+productName         string
+CustomerName        string
+InvoiceNumber       string
+InvoiceText         string
+
+1) add input dialog activity 
+	dialog title - "Invoice details"
+	input label  - "Enter customer name"
+	value entered - CustomerName
+2) add input dialog activity 
+	dialog title - "Invoice details"
+	input label  - "Enter customer email"
+	value entered - customerEmail
+3) add input dialog activity 
+	dialog title - "Invoice details"
+	input label  - "Enter invoice number"
+	value entered - InvoiceNumber
+4) add input dialog activity 
+	dialog title - "Product details"
+	input label  - "Enter product name"
+	value entered - productName 
+5) add input dialog activity 
+	dialog title - "Product details"
+	input label  - "Enter quantity"
+	value entered - quantity
+6) add input dialog activity 
+	dialog title - "Product details"
+	input label  - "Enter price per unit"
+	value entered - price
+7) add assign activity
+	variable - total
+	set value - quantity * price
+8) add assign activity
+	variable - InvoiceText  
+	setvalue - "============================================================" + Environment.NewLine +
+"INVOICE" + Environment.NewLine +
+ Environment.NewLine +
+ "------------------------" + Environment.NewLine +
+"Invoice Number: " + invoiceNumber + Environment.NewLine +
+"Customer Name: " + customerName + Environment.NewLine +
+"------------------------" + Environment.NewLine +
+"Product: " + productName + Environment.NewLine +
+"Quantity: " + quantity.ToString + Environment.NewLine +
+ "Price Per Unit: ₹" + price.ToString + Environment.NewLine +
+ Environment.NewLine +
+ "------------------------" + Environment.NewLine +
+ "Grand Total: ₹" + total.ToString + Environment.NewLine +
+"============================================================"
+
+9) add word application scope 
+	before that create a word doc empty word doc save as>  invoice.docx
+	copy the path and paste in file path
+10) inside do > add > append text activity 
+	text - InvoiceText
+11) add save document as pdf activity
+       file path - namma lready pota file path ahh paste pannu adhula .doxc remove pannitu paste this>  + InvoiceNumber.ToString
+12) do ku veliya add message box activity
+	"Invoice created successfully"
+
 
