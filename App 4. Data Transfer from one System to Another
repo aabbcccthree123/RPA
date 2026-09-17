@@ -44,3 +44,38 @@ Add Message Box
 Text: "Generated Password: " + password
 run the program
 
+
+BOT 3 Mass email bot
+
+open excel give data
+Name          email
+mughila	      25smcs030@psgrkcw.ac.in  --- idhula ung amail id potukonga
+ save as Email.xlsx
+
+create variable
+Name: dtEmails
+Variable type: DataTable
+
+add use excel file activity
+excel file la  copy paste the Email file path
+inside do activity add read range
+
+then inside > do drag Read Range activity > range la plus icon click panni excel>indicate in excel click pannanum > aprm namma save panna EmailList.xlsx open aagum adhula namma potu irukka information ah mattum drag pannanum then mela confirm nu irukkum adha select pannanum
+
+save to : dtEmails
+
+aprm read range ku keela add for each row in data table activity >
+Datatable > dtEmails
+Item > CurrentFlow
+
+inside body > drag send email activity (icon vanthu namm agmail icon mari irukkum)
+
+Gmail - namma email
+save as draft - no
+To - New String() {CurrentRow("Email").ToString.Trim}
+Subject - "Important information"
+Body - Hello This is RPA lab
+
+run the program
+
+
