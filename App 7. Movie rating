@@ -24,6 +24,9 @@ Inside do
  Enter movie name → it will automatically go to the rating page.
 Minimize Edge → open UiPath Studio.
 
+again add use application browser activity
+indicate rating screen fully
+
 → Add Get Text → indicate the rating text.
  Save to → MovieRating
 
