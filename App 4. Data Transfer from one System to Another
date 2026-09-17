@@ -1,1 +1,46 @@
+BOT 1 DATATRANSFER
+
+in UiPath Create variable dtSource > variable type la Browse for datatype kuduthu Datatble nu search pannanum System.Data.Datatable la irukka Datatable ah choose pannunga
+
+open excel give data
+Name	Age	Department
+Arun	20	CSE
+Ravi	21	IT
+Priya	20	ECE
+
+save as SourceData.xlsx
+
+aprm innoru blank excel file open panni adha empty ah vittutu adha save as > DestinationData.xlsx
+
+in UiPath > drag Use Excel file activity > Excel file la namma save panna SourceData path ah copy paste pannanum
+then inside do drag Read Range activity > range la plus icon click panni excel>indicate in excel click pannanum > aprm namma save panna SourceData.xlsx open aagum adhula namma potu irukka information ah mattum drag pannanum then mela confirm nu irukkum adha select pannanum
+save to > dtSource
+
+add another use excel file activity [first use excel file activity end aagarathula anga add pannanum]
+
+Excel file la namma save panna DeatinationData path ah copy paste pannanum
+add write datatable to excel activity
+what to write > dtSource
+destination > Excel.Sheet("Sheet1").Range("A1")
+
+run the program
+
+BOT 2 password generator
+
+create new process
+
+Create a variable
+
+In the Variables panel:
+
+Name	        Type
+password	String
+
+add Assign activity
+To: password
+Value: Guid.NewGuid().ToString("N").Substring(0,10)
+
+Add Message Box
+Text: "Generated Password: " + password
+run the program
 
