@@ -6,7 +6,9 @@ status		String
 customerid 	String
 customerName	String
 email		String
-ordered		String
+orderid		String
+amount          double
+
 
 create a excel file with fields 
 CustomerID	CustomerName	Email	OrderID	Amount	Status
@@ -41,18 +43,18 @@ property la
 
 6)   drag if activity
         condition  -  customerRow IsNot Nothing
-     then activity
-        assign activity
+    inside then 
+        add assign activity
              customerName - customerRow("customerName").ToString
-        assign activity
+       add assign activity
              email - customerRow("email").ToString
-        assign activity
+       add assign activity
              orderid - customerRow("OrderID").ToString
-        assign activity
+       add assign activity
              amount - Convert.ToDouble(customerRow("Amount"))
-        assign activity
+       add assign activity
              status - customerRow("Status").ToString
-        messagebox activity
+       add messagebox activity
               "Customer Name: " + customerName + Environment.NewLine +
 "Email: "+ email + Environment.NewLine +
 "Order ID: " + orderID + Environment.NewLine +
