@@ -13,7 +13,7 @@ Run the program
 
 ANOTHER METHOD 
 
-add get newest email activity > select your email > 
+add get newest email activity (gmail icon activity) > select your email > 
 add message box > "From: " + emails.From.Address + Environment.NewLine + "Subject: " + emails.Subject + Environment.NewLine + "Body: " + emails.Body
 
 run the program 
